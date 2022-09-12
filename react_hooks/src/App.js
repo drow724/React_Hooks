@@ -1,26 +1,53 @@
 import { useEffect, useRef, useState } from "react";
 
-const useScroll = () => {
-  const [state, setState] = useState({
-    x: 0,
-    y: 0
-  });
-  const onScroll = () => {
-    setState({ y: window.scrollY, x: window.scrollX });
+const useFullscreen = (callback) => {
+  const element = useRef();
+  const runCb = (isFull) => {
+    if (callback && typeof callback === "function") callback(isFull);
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  return state;
+  const triggerFull = () => {
+    if (element.current) {
+      if (element.current.requestFullscreen) {
+        element.current.requestFullscreen();
+      } else if (element.current.mozRequestFullscreen) {
+        element.current.mozRequestFullscreen();
+      } else if (element.current.webkitRequestFullscreen) {
+        element.current.webkitRequestFullscreen();
+      } else if (element.current.msRequestFullscreen) {
+        element.current.msRequestFullscreen();
+      }
+
+      runCb(true);
+    }
+  };
+  const exitFull = () => {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullscreen) {
+      document.mozExitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+    runCb(false);
+  };
+  return { element, triggerFull, exitFull };
 };
 
 const App = () => {
-  const { y } = useScroll();
+  const onFullS = (isFull) => {
+    console.log(isFull ? "We are Full" : "We are small");
+  };
+  const { element, triggerFull, exitFull } = useFullscreen(onFullS);
   return (
     <div className="App" style={{ height: "1000vh" }}>
-      <h1 style={{ position: "fixed", color: y > 100 ? "red" : "blue" }}>Hi</h1>
+      <div ref={element}>
+        <img src="https://i.ibb.co/R6RwNxx/grape.jpg" alt="grape" width="250" />
+        <button onClick={exitFull}>exitFull</button>
+      </div>
+      <button onClick={triggerFull}>Make Fullscreen</button>
     </div>
   );
 };
