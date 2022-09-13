@@ -1,4 +1,4 @@
-# @nooks/use-fade-in
+# @jaegeun/use-fade-in
 
 React Hook to fade in any element.
 
@@ -6,17 +6,17 @@ React Hook to fade in any element.
 
 #### yarn
 
-`yarn add @nooks/use-fade-in`
+`yarn add @jaegeun/use-fade-in`
 
 #### npm
 
-`npm i @nooks/use-fade-in`
+`npm i @jaegeun/use-fade-in`
 
 ## Usage
 
 ```js
 import React from "react";
-import useFadeIn from "@nooks/use-fade-in";
+import useFadeIn from "@jaegeun/use-fade-in";
 
 function App() {
   const fadeIn = useFadeIn(5, 10);
