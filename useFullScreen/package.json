@@ -1,23 +1,23 @@
 {
-  "name": "@nooks/use-fullscreen",
+  "name": "@jaegeun/use-fullscreen",
   "version": "1.0.0",
   "description": "React Hook to make any element go Fullscreen",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomadcoders/nooks.git"
+    "url": "git+https://github.com/drow724/React_Hooks.git"
   },
   "keywords": [
     "react",
     "hooks",
     "fullscreen"
   ],
-  "author": "Nicolás Serrano Arévalo <nico@nomadcoders.co>",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nomadcoders/nooks/issues"
+    "url": "https://github.com/drow724/React_Hooks/issues"
   },
-  "homepage": "https://github.com/nomadcoders/nooks#readme",
+  "homepage": "https://github.com/drow724/React_Hooks#readme",
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
