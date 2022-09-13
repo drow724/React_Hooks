@@ -1,4 +1,4 @@
-# @nooks/use-fullscreen
+# @jaegeun/use-fullscreen
 
 React Hook to make any element go Fullscreen
 
@@ -6,17 +6,17 @@ React Hook to make any element go Fullscreen
 
 #### yarn
 
-`yarn add @nooks/use-fullscreen`
+`yarn add @jaegeun/use-fullscreen`
 
 #### npm
 
-`npm i @nooks/use-fullscreen`
+`npm i @jaegeun/use-fullscreen`
 
 ## Usage
 
 ```js
 import React from "react";
-import useFullscreen from "@nooks/use-fullscreen";
+import useFullscreen from "@jaegeun/use-fullscreen";
 
 function App() {
   const onChange = isFull =>
