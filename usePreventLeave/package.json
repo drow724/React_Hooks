@@ -1,11 +1,11 @@
 {
-  "name": "@nooks/use-prevent-leave",
+  "name": "@jaegeun/use-prevent-leave",
   "version": "1.0.0",
   "description": "React Hook to prompt the user for confirmation before leaving the page.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomadcoders/nooks.git"
+    "url": "git+https://github.com/drow724/React_Hooks.git"
   },
   "keywords": [
     "react",
@@ -15,12 +15,12 @@
     "save",
     "changes"
   ],
-  "author": "Nicolás Serrano Arévalo <nico@nomadcoders.co>",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nomadcoders/nooks/issues"
+    "url": "https://github.com/drow724/React_Hooks/issues"
   },
-  "homepage": "https://github.com/nomadcoders/nooks#readme",
+  "homepage": "https://github.com/drow724/React_Hooks#readme",
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
