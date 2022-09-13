@@ -1,0 +1,28 @@
+{
+  "name": "@jaegeun/use-command",
+  "version": "1.0.2",
+  "description": "React Hook to commandLine",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drow724/React_Hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "command"
+  ],
+  "author": "Jackson Song <drow724@naver.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drow724/React_Hooks/issues"
+  },
+  "homepage": "https://github.com/drow724/React_Hooks#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
