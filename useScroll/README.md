@@ -1,4 +1,4 @@
-# @nooks/use-scroll
+# @jaegeun/use-scroll
 
 React Hook to get X/Y coordinates of current position of the scroll.
 
@@ -6,17 +6,17 @@ React Hook to get X/Y coordinates of current position of the scroll.
 
 #### yarn
 
-`yarn add @nooks/use-scroll`
+`yarn add @jaegeun/use-scroll`
 
 #### npm
 
-`npm i @nooks/use-scroll`
+`npm i @jaegeun/use-scroll`
 
 ## Usage
 
 ```js
 import React from "react";
-import useScroll from "@nooks/use-scroll";
+import useScroll from "@jaegeun/use-scroll";
 
 function App() {
   const { x, y } = useScroll();

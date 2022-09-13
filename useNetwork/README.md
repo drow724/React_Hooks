@@ -1,4 +1,4 @@
-# @nooks/use-network
+# @jaegeun/use-network
 
 React Hook to listen when the user goes online or offline.
 
@@ -6,17 +6,17 @@ React Hook to listen when the user goes online or offline.
 
 #### yarn
 
-`yarn add @nooks/use-network`
+`yarn add @jaegeun/use-network`
 
 #### npm
 
-`npm i @nooks/use-network`
+`npm i @jaegeun/use-network`
 
 ## Usage
 
 ```js
 import React from "react";
-import useNetwork from "@nooks/use-network";
+import useNetwork from "@jaegeun/use-network";
 
 function App() {
   const onNetworkChange = isOnline =>

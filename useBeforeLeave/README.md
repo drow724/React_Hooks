@@ -1,4 +1,4 @@
-# @nooks/use-before-leave
+# @jaegeun/use-before-leave
 
 React Hook to execute a function when the mouse leaves the page. Useful to show a popup or for analytics.
 
@@ -6,17 +6,17 @@ React Hook to execute a function when the mouse leaves the page. Useful to show 
 
 #### yarn
 
-`yarn add @nooks/use-before-leave`
+`yarn add @jaegeun/use-before-leave`
 
 #### npm
 
-`npm i @nooks/use-before-leave`
+`npm i @jaegeun/use-before-leave`
 
 ## Usage
 
 ```js
 import React from "react";
-import useBeforeLeave from "@nooks/use-before-leave";
+import useBeforeLeave from "@jaegeun/use-before-leave";
 
 function App() {
   const beforeLeave = () => console.log("User is leaving...");
