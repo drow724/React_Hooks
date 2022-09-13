@@ -1,4 +1,4 @@
-# @nooks/use-confirm
+# @jaegeun/use-confirm
 
 React Hook to ask the user for a confirmation before executing a function.
 
@@ -6,17 +6,17 @@ React Hook to ask the user for a confirmation before executing a function.
 
 #### yarn
 
-`yarn add @nooks/use-confirm`
+`yarn add @jaegeun/use-confirm`
 
 #### npm
 
-`npm i @nooks/use-confirm`
+`npm i @jaegeun/use-confirm`
 
 ## Usage
 
 ```js
 import React from "react";
-import useConfirm from "@nooks/use-confirm";
+import useConfirm from "@jaegeun/use-confirm";
 
 function App() {
   const deleteWorld = () => console.log("Deleting world...");
