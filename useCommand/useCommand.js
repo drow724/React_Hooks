@@ -22,6 +22,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
 
   //command에 따른 action
   const onChange = event => {
+    event.preventDefault();
     if(event.key === "Escape"){
       if(doEvery){
         //모든 유효한 command에서 실행  
