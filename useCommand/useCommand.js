@@ -22,8 +22,8 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
 
   //command에 따른 action
   const onChange = event => {
-    event.preventDefault();
     if(event.key === "Escape"){
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -33,6 +33,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         escape();
       }
     } else if(event.key === "ArrowUp"){
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -42,6 +43,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         arrowUp();
       }
     } else if(event.key === "ArrowDown") {
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -51,6 +53,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         arrowDown();
       }
     } else if(event.key === "ArrowLeft"){
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -60,6 +63,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         arrowLeft();
       }
     } else if(event.key === "ArrowRight") {
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -69,6 +73,7 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         arrowRight();
       }
     } else if(event.key === "Enter") {
+      event.preventDefault();
       if(doEvery){
         //모든 유효한 command에서 실행  
         doEvery();
@@ -78,7 +83,12 @@ export const useCommand = (doEvery,arrowUp,arrowDown,arrowLeft,arrowRight,enter,
         enter();
       }
     }
+    return event.key
   }
 
-  return {element, onChange}
+  const focusOut = () => {
+    element.current.focus();
+  }
+
+  return {element, onChange, focusOut}
 }

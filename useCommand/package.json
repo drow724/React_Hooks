@@ -1,6 +1,6 @@
 {
   "name": "@jaegeun/use-command",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "React Hook to commandLine",
   "main": "index.js",
   "repository": {
