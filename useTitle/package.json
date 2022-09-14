@@ -1,7 +1,7 @@
 {
   "name": "@jaegeun/use-title",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Hook to update your document's title.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "hook"
   ],
   "author": "jaegeun_song",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/drow724/React_Hooks/issues"
   },
